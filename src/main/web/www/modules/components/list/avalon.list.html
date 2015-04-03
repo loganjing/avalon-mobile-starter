@@ -1,0 +1,37 @@
+MS_OPTION_CONTENT
+<div class="page-content">
+    <div class="content-block-title">{{name}}</div>
+    <div class="list-block accordion-list" style="overflow-x: hidden">
+        <ul>
+            <li ms-controller="draggList"
+                ms-repeat="item"
+                ms-click="_extend($index, $event)"
+                ms-on-swipeleft="_moveLeft($index, $event)"
+                ms-class="accordion-item"
+                ms-class-1="accordion-item-expanded:el.isExtend"
+                ms-attr-id="el.id">
+                <a
+                    data-draggable-axis="x"
+                    ms-draggable="draggList"
+                    data-draggable-1id="draggList"
+                    data-draggable-stop="stop"
+                    data-draggable-drag="drag"
+                    class="item-content item-link swipeout-content ">
+                    <div  class="item-inner">
+                        <div class="item-title">{{el.title}}</div>
+                    </div>
+                </a>
+                <div class="swipeout-actions-right">
+                    <a style="margin: 7px 8px;"  ms-click="removeLi($index, $event)" class="action button bg-blue">删除</a>
+                </div>
+                <div ms-css-heigth="auto:el.isExtend" class="accordion-item-content">
+                    <div class="content-block">
+                        <p>{{el.content}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--
+data-draggable-axis="x" ms-draggable="draggList" data-draggable-1id="draggList" data-draggable-stop="stop"-->

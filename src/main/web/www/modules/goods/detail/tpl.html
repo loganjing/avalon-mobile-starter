@@ -1,0 +1,84 @@
+<div ms-controller="cashcouponDetail">
+    <div class="proDetails">
+        <div class="imgWrap">
+            <!--<a href="">-->
+            <img ms-src="{{cashcoupon.image}}" alt="" width="100%"/>
+
+            <h2><p ms-text="cashcoupon.name"></p></h2>
+            <!--</a>-->
+        </div>
+        <div class="buyInfo">
+            <b ms-text="cashcoupon.price|currency"></b>
+            <del ms-if="cashcoupon.price < cashcoupon.mktprice" ms-text="cashcoupon.mktprice|currency"></del>
+
+            <!--<a class="pay" ms-class-gray="!(pay.isPay)" ms-attr-href="pay.isPay ? 11 : javascript:void(0)" ms-click="payFun()">{{pay.payText}}</a>-->
+            <!--<a class="pay" ms-class-gray="!(pay.isPay)" href="#!/buy">{{pay.payText}}</a>-->
+            <a class="pay" ms-class-gray="!(pay.isPay)" href="javascript:void(0)" ms-click="payFun()" ms-text="pay.payText"></a>
+            <!--<a ms-if="pay.isPay" href="javascript:void(0)" ms-click="addCartFun()">加入购物车</a>-->
+        </div>
+        <!--<div class="moreSame">
+            <a href="javascript:void(0)">查看19家适用商户</a>
+        </div>-->
+
+        <div class="otherInfo">
+            <div class="leftWrap">
+                <i></i>
+                {{cashcoupon.sale_count}}人购买
+            </div>
+            <div class="rightWrap">
+                <i></i>
+                <!--倒计时-->
+                <span ms-text="countdownStr"></span>
+            </div>
+        </div>
+        <div class="txtInfo">
+            <h3>特别提示</h3>
+
+            <div class="detailWrap">
+                <p>有效期：{{cashcoupon.start_time*1000|date("yyyy-MM-dd")}}&nbsp;至&nbsp;{{cashcoupon.end_time*1000|date("yyyy-MM-dd")}}</p>
+                <br/>
+
+                <p>使用范围：{{cashcoupon.area_conf.areaGroupName}}&nbsp;{{cashcoupon.store_name}}</p>
+            </div>
+        </div>
+        <div class="txtInfo" ms-if="cashcoupon.stores">
+            <h3>门店信息</h3>
+
+            <div class="detailWrap" ms-repeat="cashcoupon.stores">
+                <p>门店：{{el.merShortName}}</p>
+
+                <p>电话：{{el.phone}}</p>
+
+                <p>地址：{{el.address}}</p>
+            </div>
+        </div>
+        <div class="moreImgInfo" ms-visible="!showDetail">
+            <a href="javascript:void(0)" ms-click="showDetailFun()">更多图文信息</a>
+        </div>
+        <div class="txtInfo" ms-visible="showDetail">
+            <h3>优惠详情</h3>
+
+            <div class="detailWrap">
+                {{cashcoupon.intro|html}}
+                <div class="otherInfo">
+                    <div class="leftWrap">
+                        <i></i>
+                        {{cashcoupon.sale_count}}人购买
+                    </div>
+                    <div class="rightWrap">
+                        <i></i>
+                        <!--倒计时-->
+                        <span ms-text="countdownStr"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buyInfo buyInfo_bottom">
+            <b ms-text="cashcoupon.price|currency"></b>
+            <del ms-if="cashcoupon.price < cashcoupon.mktprice" ms-text="cashcoupon.mktprice|currency"></del>
+
+            <a class="pay" ms-class-gray="!(pay.isPay)" href="javascript:void(0)" ms-click="payFun()" ms-text="pay.payText"></a>
+            <!--<a ms-if="pay.isPay" href="javascript:void(0)" ms-click="addCartFun()">加入购物车</a>-->
+        </div>
+    </div>
+</div>

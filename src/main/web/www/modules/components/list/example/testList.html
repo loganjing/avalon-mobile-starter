@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="../../../css/main.css"/>
+    <script src="../../../vendor/avalon/avalon.mobile.shim.js"></script>
+</head>
+<script>
+    require(["aList/avalon.list"], function() {
+        avalon.ready(function() {
+            avalon.define("list1", function(vm) {
+                vm.$skipArray = ["$opt"]
+                vm.$opt = {
+                    item:[
+                        {   id:"1",
+                            title:"张佳佳",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"2",
+                            title:"吴裕荣",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"3",
+                            title:"王泽凯",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"4",
+                            title:"荆龙刚",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"5",
+                            title:"张佳佳",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"6",
+                            title:"吴裕荣",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"7",
+                            title:"王泽凯",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"8",
+                            title:"荆龙刚",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"9",
+                            title:"张佳佳",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"10",
+                            title:"吴裕荣",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"11",
+                            title:"王泽凯",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"12",
+                            title:"荆龙刚",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        } ,
+                        {   id:"13",
+                            title:"未乐",
+                            isExtend:false,
+                            content:"this content is interduce the resouce of item1!"
+                        }
+
+                    ],
+                    name: "联系人列表(avalon-UI)",
+                    afterExtend:function(index, vmodel, options, vmodels){
+                       // alert("第"+index+"个List展开!")
+                    }
+                }
+
+            });
+            avalon.scan();
+        });
+
+    });
+</script>
+<body>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages">
+            <div data-page="home" class="page navbar-fixed">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">XXX</div>
+                        <div class="center">通讯录</div>
+                        <div class="right">XXX</div>
+                    </div>
+                </div>
+                <div class="page-content" style="padding-top: 15px;">
+                    <div ms-controller="list1">
+                        <div ms-widget="list,ssss,$opt"></div>
+                        <a ms-click="removeLi">DDDDD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .page-content{
+        padding-top: 15px;
+    }
+</style>
+</body>
+</html>

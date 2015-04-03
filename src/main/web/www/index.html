@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <!--<link rel="apple-touch-icon" href="custom_icon.png">-->
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="./vendor/require/require.min.js" data-main="main.js" defer async="true"></script>
+
+    <style>
+        /*为了避免未经处理的原始模板内容在页面载入时在页面中一闪而过，我们可以使用以下样式*/
+        .ms-controller, .ms-important, [ms-controller], [ms-important] {
+            visibility: hidden;
+        }
+
+    </style>
+
+</head>
+
+<body ms-controller="root" class="ms-controller">
+
+    <div ms-controller="page" id="page">
+        <div ms-include-src="header"></div>
+        <div ms-view id="main"></div>
+    </div>
+
+</body>
+
+</html>

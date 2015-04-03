@@ -1,0 +1,79 @@
+{
+    "code": "00000",
+    "msg": "操作成功！",
+    "data": {
+        "cashcoupon": {
+            "id": "9",
+            "cat_id": "3",
+            "brand_id": "6",
+            "coupon_bn": "ED53C7661A0FD4A",
+            "barcode": "",
+            "stock": "19987",
+            "orig_stock": "7",
+            "freeze": "0",
+            "pc_show": "1",
+            "app_show": "1",
+            "limit_rules": "a:1:{s:9:\"one_limit\";a:2:{s:4:\"type\";s:1:\"1\";s:7:\"max_num\";i:0;}}",
+            "active_bn": "0",
+            "seller_id": "31245",
+            "seller_bn": "666002158140043",
+            "price": "16.500",
+            "mktprice": "18.000",
+            "cost": "16.200",
+            "dma": "18.000",
+            "payment_type": "1",
+            "nostore_sell": "2",
+            "image_id": "e8ab471a08fa8e98388807fb8182b7ff",
+            "name": "赛百味18元现金券",
+            "desc": "售价16.5元现金券!可兑换任意18元商品，超出部分另行支付。丰富新鲜配料随心选,营养美味,悦动你的味蕾!",
+            "intro": "<p><font face=\"Microsoft Yahei\" size=\"3\"><strong>18元现金券</strong>（1张，价值18元）</font></p>\n<p><font face=\"Microsoft Yahei\" size=\"3\"><br/></font></p>\n<div>\n<hr>\n\n<p><font face=\"Microsoft Yahei\" size=\"3\"><strong><br/></strong></font></p>\n<p><font face=\"Microsoft Yahei\" size=\"3\"><strong>【温馨提示】</strong></font></p>\n<ul>\n<li><span style=\"FONT-FAMILY: 'Microsoft Yahei'; FONT-SIZE: medium\">本现金券可兑换赛百味18元产品一份，超出部分可另行支付</span> \n</li>\n\t<li><span style=\"FONT-FAMILY: 'Microsoft Yahei'; FONT-SIZE: medium\">本券仅限在古美路店使用，需出示券码以及接收券的手机号</span> \n</li>\n\t<li><font face=\"Microsoft Yahei\" size=\"3\">本券不支持退款</font> </li>\n</ul>\n<p> </p>\n\n<p><font face=\"Microsoft Yahei\"></font>&nbsp;</p>\n<hr>\n\n<p><font face=\"Microsoft Yahei\"></font>&nbsp;</p>\n<p style=\"TEXT-ALIGN: left\"><font face=\"Microsoft Yahei\" size=\"3\"><strong>【部分产品推荐】</strong></font></p>\n<p style=\"TEXT-ALIGN: left\"><font face=\"Microsoft Yahei\" size=\"3\">香烤培根</font></p>\n<p style=\"TEXT-ALIGN: left\"><font face=\"Microsoft Yahei\" size=\"3\">清爽生菜和鲜美多汁的西红柿，三种食材的绝佳组合，口感丰盈。</font></p>\n<font face=\"Microsoft Yahei\">\n<img src=\"http://www.sandlife.com.cn/public/images/7b/0c/d7/21877cd94924945a5d48387318b4a7fa.jpg?1405577371#w\"> </font>\n<p><font face=\"Microsoft Yahei\"></font>&nbsp;</p>\n<p><font face=\"Microsoft Yahei\" size=\"3\">火腿</font></p>\n<p><font face=\"Microsoft Yahei\" size=\"3\">鲜嫩味美的火腿配上SUBWAY餐厅特有的 蜜汁芥末酱，搭配您自选最爱的蔬菜，美味难以阻挡。</font></p>\n<font face=\"Microsoft Yahei\">\n<img src=\"http://www.sandlife.com.cn/public/images/1b/e8/6a/ccad52fb6f9c75f5b47599dd5648fc88.jpg?1405577412#w\"> </font>\n<p><font face=\"Microsoft Yahei\" size=\"3\">意大利香辣</font></p>\n<p><font face=\"Microsoft Yahei\" size=\"3\">意大利辣香肠、萨拉米香肠和奶酪，搭配每日烘焙的面包，满足你的味蕾。</font></p>\n<font face=\"Microsoft Yahei\">\n<img src=\"http://www.sandlife.com.cn/public/images/76/c8/f4/42ec9d6b9e7a7492d086d7e6014175a8.jpg?1405577466#w\"> </font>\n<p><font face=\"Microsoft Yahei\"></font>&nbsp;</p>\n<p><font face=\"Microsoft Yahei\" size=\"3\">意大利香肠</font></p>\n<p><font face=\"Microsoft Yahei\" size=\"3\">意大利风味香肠肉香汁浓，热烤奶酪入口即融，搭配喜欢的面包、酱料和蔬菜，味香萦绕齿间回味无穷。</font></p>\n<font face=\"Microsoft Yahei\">\n<img src=\"http://www.sandlife.com.cn/public/images/a5/1f/9d/d2919965dad504f5aece2f903cb3cb0f.jpg?1405577499#w\"><br/></font><font size=\"3\">注：具体产品请咨询门店服务人员！</font><br/></div>\n<div style=\"DISPLAY: none !important\" id=\"CTPstack\">\n<p> </p>\n\n<div><embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\"> \n<p> </p>\n</div></div>",
+            "area_conf": {
+                "areaGroupName": "上海"
+            },
+            "p_content": "赛百味18元现金券一张",
+            "m_content": "赛百味18元现金券一张，请于2015年12月31日前至指定门店使用",
+            "start_time": "1394812800",
+            "end_time": "1451491200",
+            "sale_count": 16,
+            "marketable": "true",
+            "unit": "",
+            "uptime": "1427783052",
+            "downtime": null,
+            "start_sale_time": "1415376000",
+            "end_sale_time": "1450886400",
+            "last_modify": "1427960461",
+            "province": "21",
+            "city": "22",
+            "district": "25",
+            "liquidation_type": "2",
+            "stores": [
+                {
+                    "address": "古美路1528号A-7号B1层",
+                    "city": "22",
+                    "contacts": "朱雅萍",
+                    "district": "25",
+                    "latitude": "31.169822",
+                    "longitude": "121.405991",
+                    "merNo": "888002154410232",
+                    "merShortName": "古美路店",
+                    "phone": "13818421433",
+                    "province": "21",
+                    "teminalNumber": "00000001"
+                }
+            ],
+            "helife_status": "false",
+            "resource": "0",
+            "up_status": "1",
+            "disabled": "false",
+            "show_type": "1",
+            "show_type_order": "50",
+            "image": "http://www.sandlife.com.cn/public/images/38/50/22/fd946059ab47f332ef39c80540111445.jpg?1405577356#w",
+            "countdown": 22915384000,
+            "store_name": "古美路店"
+        },
+        "pay": {
+            "pay_text": "立即抢购",
+            "is_pay": true
+        }
+    }
+}
