@@ -368,11 +368,11 @@ define(['module'], function (module) {
 
             //XPCOM, you so crazy
             try {
-                inStream = Cc['@mozilla.org/network/file-input-stream;1']
+                inStream = Cc['@mozilla.org/network/file-text-stream;1']
                            .createInstance(Ci.nsIFileInputStream);
                 inStream.init(fileObj, 1, 0, false);
 
-                convertStream = Cc['@mozilla.org/intl/converter-input-stream;1']
+                convertStream = Cc['@mozilla.org/intl/converter-text-stream;1']
                                 .createInstance(Ci.nsIConverterInputStream);
                 convertStream.init(inStream, "utf-8", inStream.available(),
                 Ci.nsIConverterInputStream.DEFAULT_REPLACEMENT_CHARACTER);

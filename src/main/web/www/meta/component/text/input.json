@@ -1,0 +1,10 @@
+/**
+ * Created by RD_bjjlg on 2015/4/8.
+ */
+{
+  name:"text",
+  template:"text.html",
+  mixins:["common","input"],
+  properties:{
+  }
+}

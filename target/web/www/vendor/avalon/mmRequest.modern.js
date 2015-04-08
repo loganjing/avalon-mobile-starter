@@ -448,7 +448,7 @@ function trimLine(val) {
 //表单元素变字符串, form为一个元素节点
 avalon.serialize = function(form) {
     var json = {};
-    // 不直接转换form.elements，防止以下情况：   <form > <input name="elements"/><input name="test"/></form>
+    // 不直接转换form.elements，防止以下情况：   <form > <text name="elements"/><text name="test"/></form>
     Array.prototype.filter.call(form.getElementsByTagName("*"), function(el) {
         if (rinput.test(el.nodeName) && el.name && !el.disabled) {
             return  rcheckbox.test(el.type) ? el.checked : true //只处理拥有name并且没有disabled的表单元素

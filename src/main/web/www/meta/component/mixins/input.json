@@ -1,0 +1,32 @@
+{
+  properties:{
+    maxlength:{
+      type:"string",
+      editorType:"int",
+      group:"prop",
+      defaultValue:null,
+      version:"basic",
+      description:"最大字符长度",
+      sync:true
+    },
+    placeholder:{
+      type:"string",
+      editorType:"text",
+      group:"prop",
+      defaultValue:"!placeholder",
+      version:"advanced",
+      description:"提示信息",
+      sync:true
+    }
+  },
+  events:{
+    onchange:{
+      handlerName:"string",
+      parameters:"ev",
+      group:"event",
+      description:"值改变时",
+      editorType:"textarea",
+      version:"advanced"
+    }
+  }
+}

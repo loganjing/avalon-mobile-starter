@@ -1,0 +1,19 @@
+{
+  package:"com.kingdee.eas.custom",
+  name:"test11",
+  alias:i18n["page_alias"],
+  template:"com.kingdee.eas.framework.list",
+  bizModule:i18n["page_bizModule"],
+  layout:"one",
+  i18n:{
+     //多语言处理时，将i18n抽取出来翻译
+     page_alias:"测试账号1",
+     page_bizModule:"应收应付",
+     com_btn_label_btn1:"新增"
+  }
+}
+
+
+/**
+ * 缩略图按照page+name来寻找.
+ */

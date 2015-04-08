@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>{{i18n.page_alias}}</title>
+</head>
+<body>
+
+<!--Button Metadata-->
+<!--当保存时，保存的是下面的HTML结构-->
+<a href="#" id="btn1" style="background-color: #0b97c4" class="outer btn" ms-click="showMoney" data-role="btn">
+    <span class="i18n">{{i18n.com_btn_label_addNew}}</span>
+</a>
+<!--当装载时，界面显示的是下面的HTML结构-->
+<a href="#" id="btn1" style="background-color: #0b97c4" class="outer btn" ms-click="showMoney" data-role="btn">
+    <span class="i18n">新增</span>
+</a>
+<!--当设计页面打开时，点击某个组件，需要组件属性翻译到工具设置属性-->
+工具分为：
+  页面设置(可设置标题,样式，布局),
+  点击某个组件时：(样式、属性、动画、事件)
+  容器类的控件可设置布局
+  Form类控件可设置绑定字段
+  按钮可能提供好几种样式
+  也可能选择图标
+<!--当设计页面保存时，需要将工具设置属性转换为组件属性-->
+  工具属性到控件属性之间的转换.
+  根据条件来决定哪些DOM输出，哪些不输出.
+
+</body>
+
+<script id="pageMeta" type="text/html">
+    
+</script>
+</html>

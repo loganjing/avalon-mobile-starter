@@ -1,0 +1,13 @@
+{
+  properties:{
+    layout:{
+      type:"string",
+      editorType:"layoutSelector",
+      group:"prop",
+      defaultValue:"two",
+      version:"advanced",
+      description:"Id",
+      sync:true
+    }
+  }
+}

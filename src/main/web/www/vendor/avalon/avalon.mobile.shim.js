@@ -1476,7 +1476,7 @@ avalon.scan = function(elem, vmodel, group) {
 }
 
 //http://www.w3.org/TR/html5/syntax.html#void-elements
-var stopScan = oneObject("area,base,basefont,br,col,command,embed,hr,img,input,link,meta,param,source,track,wbr,noscript,script,style,textarea".toUpperCase())
+var stopScan = oneObject("area,base,basefont,br,col,command,embed,hr,img,text,link,meta,param,source,track,wbr,noscript,script,style,textarea".toUpperCase())
 
 function checkScan(elem, callback, innerHTML) {
     var id = setTimeout(function() {
@@ -1551,7 +1551,7 @@ var priorityMap = {
     "on": 3000
 }
 
-var events = oneObject("animationend,blur,change,input,click,dblclick,focus,keydown,keypress,keyup,mousedown,mouseenter,mouseleave,mousemove,mouseout,mouseover,mouseup,scan,scroll,submit")
+var events = oneObject("animationend,blur,change,text,click,dblclick,focus,keydown,keypress,keyup,mousedown,mouseenter,mouseleave,mousemove,mouseout,mouseover,mouseup,scan,scroll,submit")
 var obsoleteAttrs = oneObject("value,title,alt,checked,selected,disabled,readonly,enabled")
 function bindingSorter(a, b) {
     return a.priority - b.priority

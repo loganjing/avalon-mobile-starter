@@ -944,7 +944,7 @@ function siblingCheck( a, b ) {
 }
 
 /**
- * Returns a function to use in pseudos for input types
+ * Returns a function to use in pseudos for text types
  * @param {String} type
  */
 function createInputPseudo( type ) {
@@ -990,7 +990,7 @@ function createPositionalPseudo( fn ) {
 /**
  * Checks a node for validity as a Sizzle context
  * @param {Element|Object=} context
- * @returns {Element|Object|Boolean} The input node if acceptable, otherwise a falsy value
+ * @returns {Element|Object|Boolean} The text node if acceptable, otherwise a falsy value
  */
 function testContext( context ) {
 	return context && typeof context.getElementsByTagName !== "undefined" && context;
@@ -1297,7 +1297,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			return 0;
 		}
 
-		// Sort on method existence if only one input has compareDocumentPosition
+		// Sort on method existence if only one text has compareDocumentPosition
 		var compare = !a.compareDocumentPosition - !b.compareDocumentPosition;
 		if ( compare ) {
 			return compare;
@@ -1479,7 +1479,7 @@ Sizzle.uniqueSort = function( results ) {
 		}
 	}
 
-	// Clear input after sorting to release objects
+	// Clear text after sorting to release objects
 	// See https://github.com/jquery/sizzle/pull/225
 	sortInput = null;
 
@@ -1919,7 +1919,7 @@ Expr = Sizzle.selectors = {
 			return !Expr.pseudos["empty"]( elem );
 		},
 
-		// Element/input types
+		// Element/text types
 		"header": function( elem ) {
 			return rheader.test( elem.nodeName );
 		},
@@ -1992,7 +1992,7 @@ Expr = Sizzle.selectors = {
 
 Expr.pseudos["nth"] = Expr.pseudos["eq"];
 
-// Add button/input type pseudos
+// Add button/text type pseudos
 for ( i in { radio: true, checkbox: true, file: true, password: true, image: true } ) {
 	Expr.pseudos[ i ] = createInputPseudo( i );
 }
@@ -2195,7 +2195,7 @@ function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postS
 			// Get initial elements from seed or context
 			elems = seed || multipleContexts( selector || "*", context.nodeType ? [ context ] : context, [] ),
 
-			// Prefilter to get matcher input, preserving a map for seed-results synchronization
+			// Prefilter to get matcher text, preserving a map for seed-results synchronization
 			matcherIn = preFilter && ( seed || !selector ) ?
 				condense( elems, preMap, preFilter, context, xml ) :
 				elems,
@@ -2574,7 +2574,7 @@ if ( !assert(function( div ) {
 // Support: IE<9
 // Use defaultValue in place of getAttribute("value")
 if ( !support.attributes || !assert(function( div ) {
-	div.innerHTML = "<input/>";
+	div.innerHTML = "<text/>";
 	div.firstChild.setAttribute( "value", "" );
 	return div.firstChild.getAttribute( "value" ) === "";
 }) ) {
@@ -6927,7 +6927,7 @@ jQuery.fn.delay = function( time, type ) {
 	support.optDisabled = !opt.disabled;
 
 	// Support: IE<=11+
-	// An input loses its value after becoming a radio
+	// An text loses its value after becoming a radio
 	input = document.createElement( "input" );
 	input.value = "t";
 	input.type = "radio";
@@ -7512,7 +7512,7 @@ var rquery = (/\?/);
 
 
 // Support: Android 2.3
-// Workaround failure to string-cast null input
+// Workaround failure to string-cast null text
 jQuery.parseJSON = function( data ) {
 	return JSON.parse( data + "" );
 };
@@ -7764,7 +7764,7 @@ function ajaxConvert( s, response, jqXHR, isSuccess ) {
 						tmp = conv2.split( " " );
 						if ( tmp[ 1 ] === current ) {
 
-							// If prev can be converted to accepted input
+							// If prev can be converted to accepted text
 							conv = converters[ prev + " " + tmp[ 0 ] ] ||
 								converters[ "* " + tmp[ 0 ] ];
 							if ( conv ) {

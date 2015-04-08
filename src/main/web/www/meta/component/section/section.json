@@ -1,0 +1,19 @@
+/**
+ * Created by RD_bjjlg on 2015/4/8.
+ */
+{
+  name:"section",
+  template:"section.html",
+  mixins:["common","container"],
+  properties:{
+    title:{
+      type:"string",
+      editorType:"text",
+      group:"prop",
+      defaultValue:"",
+      version:"basic",
+      description:"标题",
+      sync:true
+    }
+  }
+}
