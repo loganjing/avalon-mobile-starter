@@ -1,0 +1,19 @@
+/**
+ * Created by RD_bjjlg on 2015/4/8.
+ */
+{
+  name:"labelContainer",
+  template:"labelContainer.html",
+  mixins:["common","container"],
+  properties:{
+    caption:{
+      type:"string",
+      editorType:"text",
+      group:"prop",
+      defaultValue:"",
+      version:"basic",
+      description:"标题",
+      sync:true
+    }
+  }
+}
